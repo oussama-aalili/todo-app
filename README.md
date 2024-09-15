@@ -27,7 +27,11 @@ Kafka: Distributed event streaming platform.
 REST: Traditional API design.    
 SOAP: Protocol for exchanging structured information.  
 Microservices: Architectural style for developing applications.  
-Event-driven architecture: Design pattern for building scalable systems.  
+Event-driven architecture: Design pattern for building scalable systems. 
+
+**Database**  
+PostgreSQL: A robust relational database.  
+MongoDB (NoSQL Database) : A flexible, non-relational database.   
 
 **DevOps**  
 Docker: Containerize the application for consistent environments.  
