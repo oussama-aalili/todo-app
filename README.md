@@ -1,4 +1,4 @@
-**The ultimate Todo App: Personal Playground **
+The ultimate Todo App: Personal Playground
 Welcome to my personal playground! This repository is dedicated to building a comprehensive Todo App that incorporates various programming concepts and languages I aim to learn and utilize in my professional work and personal growth.
 
 **Project Overview**
