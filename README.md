@@ -24,7 +24,7 @@ Lombok: Simplify Java code with annotations.
 Log4j: Logging library for Java.  
 Langchain4j: Integrate AI and LLM-powered applications with Spring Boot.  
 Kafka: Distributed event streaming platform.  
-REST: Traditional API design.
+REST: Traditional API design.  
 Postman: Tool for creating, testing, and documenting APIs.
 SOAP: Protocol for exchanging structured information.  
 Microservices: Architectural style for developing applications.  
