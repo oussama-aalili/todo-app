@@ -41,7 +41,6 @@ public class TaskController {
     // Update task by ID
     @PutMapping("/{id}")
     public ResponseEntity<Task> updateTask(@PathVariable int id, @RequestBody Task updatedTask) {
-        System.out.println("Updating task with ID: " + id + " to " + updatedTask); // Add logging
         Optional<Task> task = taskService.updateTask(id, updatedTask);
         return task.map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -55,5 +54,16 @@ public class TaskController {
         } else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    // Search tasks
+    @GetMapping("/search")
+    public ResponseEntity<List<Task>> searchTasks(
+            @RequestParam(required = false) String title,
+            @RequestParam(required = false) String description,
+            @RequestParam(required = false) Boolean completed) {
+
+        List<Task> tasks = taskService.searchTasks(title, description, completed);
+        return ResponseEntity.ok(tasks);
     }
 }

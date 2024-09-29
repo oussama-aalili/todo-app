@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class TaskService {
@@ -38,4 +39,17 @@ public class TaskService {
     public boolean deleteTask(int id) {
         return tasks.removeIf(task -> task.getId() == id);
     }
+
+    // Search tasks by title, description, or completed status
+    public List<Task> searchTasks(String title, String description, Boolean completed) {
+        return tasks.stream()
+                .filter(task -> (title == null || task.getTitle().toLowerCase().contains(title.toLowerCase())) &&
+                        (description == null || task.getDescription().toLowerCase().contains(description.toLowerCase())) &&
+                        (completed == null || task.isCompleted() == completed))
+                .collect(Collectors.toList());
+    }
+
+
+
+
 }
