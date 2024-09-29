@@ -48,8 +48,4 @@ public class TaskService {
                         (completed == null || task.isCompleted() == completed))
                 .collect(Collectors.toList());
     }
-
-
-
-
 }
