@@ -63,3 +63,535 @@
 2024-10-06 17:54:41 [http-nio-8080-exec-7] INFO  com.example.taskmanager.service.TaskService - Searching task with title: null
 2024-10-06 17:55:17 [http-nio-8080-exec-8] INFO  com.example.taskmanager.controller.TaskController - delete a task with ID: 1
 2024-10-06 17:55:17 [http-nio-8080-exec-8] INFO  com.example.taskmanager.service.TaskService - Deleting task with ID: 1
+2024-10-08 17:56:53 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-08 17:56:53 [main] INFO  com.example.taskmanager.TaskManagerApplication - Starting TaskManagerApplication using Java 21.0.4 with PID 22204 (C:\Users\oaalili\IdeaProjects\todo-app\target\classes started by OAALILI in C:\Users\oaalili\IdeaProjects\todo-app)
+2024-10-08 17:56:53 [main] DEBUG com.example.taskmanager.TaskManagerApplication - Running with Spring Boot v3.1.3, Spring v6.0.11
+2024-10-08 17:56:53 [main] INFO  com.example.taskmanager.TaskManagerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-08 17:56:54 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-08 17:56:54 [main] INFO  org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-10-08 17:56:54 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-08 17:56:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-08 17:56:54 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-08 17:56:54 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-10-08 17:56:55 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-08 17:56:55 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1442 ms
+2024-10-08 17:56:55 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-08 17:56:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-08 17:56:55 [main] INFO  com.example.taskmanager.TaskManagerApplication - Started TaskManagerApplication in 2.486 seconds (process running for 3.959)
+2024-10-08 17:57:44 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-10-08 17:57:44 [http-nio-8080-exec-1] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-10-08 17:57:44 [http-nio-8080-exec-1] INFO  org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-10-08 17:57:44 [http-nio-8080-exec-1] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Completed initialization in 36 ms
+2024-10-08 17:57:44 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-08 17:57:44 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-08 17:57:44 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-09 19:24:07 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-09 19:24:08 [main] INFO  com.example.taskmanager.TaskManagerApplication - Starting TaskManagerApplication using Java 21.0.4 with PID 6396 (C:\Users\oaalili\IdeaProjects\todo-app\target\classes started by OAALILI in C:\Users\oaalili\IdeaProjects\todo-app)
+2024-10-09 19:24:08 [main] DEBUG com.example.taskmanager.TaskManagerApplication - Running with Spring Boot v3.1.3, Spring v6.0.11
+2024-10-09 19:24:08 [main] INFO  com.example.taskmanager.TaskManagerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 19:24:10 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-09 19:24:10 [main] INFO  org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-10-09 19:24:11 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-09 19:24:11 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-09 19:24:11 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-09 19:24:11 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-10-09 19:24:11 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-09 19:24:11 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3570 ms
+2024-10-09 19:24:12 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-09 19:24:13 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-09 19:24:13 [main] INFO  com.example.taskmanager.TaskManagerApplication - Started TaskManagerApplication in 6.442 seconds (process running for 10.304)
+2024-10-09 19:34:07 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-10-09 19:34:07 [http-nio-8080-exec-3] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-10-09 19:34:07 [http-nio-8080-exec-3] INFO  org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-10-09 19:34:07 [http-nio-8080-exec-3] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Completed initialization in 197 ms
+2024-10-09 19:35:20 [http-nio-8080-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-09 19:35:20 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-09 19:35:20 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2024-10-09 19:35:20 [http-nio-8080-exec-4] INFO  com.example.taskmanager.controller.TaskController - Creating a new task: Task(id=0, title=Update, description=Milk, Bread, Eggs, completed=false)
+2024-10-09 19:35:20 [http-nio-8080-exec-4] INFO  com.example.taskmanager.service.TaskService - Adding a new task with title: Update
+2024-10-09 19:35:20 [http-nio-8080-exec-4] DEBUG com.example.taskmanager.service.TaskService - Current number of tasks: 1
+2024-10-09 19:52:12 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-09 19:52:13 [main] INFO  com.example.taskmanager.TaskManagerApplication - Starting TaskManagerApplication using Java 21.0.4 with PID 12608 (C:\Users\oaalili\IdeaProjects\todo-app\target\classes started by OAALILI in C:\Users\oaalili\IdeaProjects\todo-app)
+2024-10-09 19:52:13 [main] DEBUG com.example.taskmanager.TaskManagerApplication - Running with Spring Boot v3.1.3, Spring v6.0.11
+2024-10-09 19:52:13 [main] INFO  com.example.taskmanager.TaskManagerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 19:52:16 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-09 19:52:16 [main] INFO  org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-10-09 19:52:17 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-09 19:52:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-09 19:52:17 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-09 19:52:17 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-10-09 19:52:17 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-09 19:52:17 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4262 ms
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f27ea3, started on Wed Oct 09 19:52:13 CEST 2024
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Mapped [{http://example.com/tasks}GetTaskRequest] onto endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.soap.server.endpoint.mapping.SoapActionAnnotationMethodEndpointMapping - Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f27ea3, started on Wed Oct 09 19:52:13 CEST 2024
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter - No MethodArgumentResolvers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@239f017e, org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@38cedb7d, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@772caabe, org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@2acdcce8, org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@7102ac3e, org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@3f598450, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@2db2a05f, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@695c938d, org.springframework.ws.server.endpoint.adapter.method.StaxPayloadMethodArgumentResolver@d5bb1c4]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter - No MethodReturnValueHandlers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@64dae3b7, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@1fedf0a4, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@1e4c6583, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@2ee48610]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.InliningXsdSchemaTypesProvider - Inlining SimpleXsdSchema{http://example.com/tasks}
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Looking for elements in schema with target namespace [http://example.com/tasks]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Creating message [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Creating message [{http://example.com/tasks}GetTaskResponse]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.SuffixBasedPortTypesProvider - Creating port type [{http://example.com/tasks}TaskPort]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.SuffixBasedPortTypesProvider - Adding operation [GetTask] to port type [{http://example.com/tasks}TaskPort]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Creating binding [{http://example.com/tasks}TaskPortSoap11]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Creating service [{http://example.com/tasks}TaskPortService]
+2024-10-09 19:52:17 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Adding port [TaskPortSoap11] to service [{http://example.com/tasks}TaskPortService]
+2024-10-09 19:52:18 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-09 19:52:18 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2024-10-09 19:52:18 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-09 19:52:18 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-09 19:52:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-09 19:52:18 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-09 19:52:18 [main] INFO  com.example.taskmanager.TaskManagerApplication - Started TaskManagerApplication in 6.961 seconds (process running for 10.067)
+2024-10-09 19:53:10 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-10-09 19:53:10 [http-nio-8080-exec-1] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-10-09 19:53:10 [http-nio-8080-exec-1] INFO  org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Using MessageFactory class [com.sun.xml.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - No WebServiceMessageFactory found in servlet 'messageDispatcherServlet': using default
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - No MessageDispatcher found in servlet 'messageDispatcherServlet': using default
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Published [org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition@2ad0cd84] as tasks.wsdl
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Published [SimpleXsdSchema{http://example.com/tasks}] as taskSchema.xsd
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-09 19:53:10 [http-nio-8080-exec-1] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Completed initialization in 57 ms
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@287b570b] at [http://localhost:8080/ws]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@2fc01793] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@196bd61c]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 19:53:10 [http-nio-8080-exec-1] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@54c28dff] at [http://localhost:8080/ws]
+2024-10-09 20:18:54 [http-nio-8080-exec-4] ERROR com.sun.xml.messaging.saaj.soap - SAAJ0537: Invalid Content-Type. Could be an error message instead of a SOAP message
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Failed to complete request: org.springframework.ws.soap.SoapMessageCreationException: Could not create message from InputStream: Invalid Content-Type:application/xml. Is this an error message instead of a SOAP response?
+2024-10-09 20:18:54 [http-nio-8080-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[messageDispatcherServlet] - Servlet.service() for servlet [messageDispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.ws.soap.SoapMessageCreationException: Could not create message from InputStream: Invalid Content-Type:application/xml. Is this an error message instead of a SOAP response?] with root cause
+com.sun.xml.messaging.saaj.SOAPExceptionImpl: Invalid Content-Type:application/xml. Is this an error message instead of a SOAP response?
+	at com.sun.xml.messaging.saaj.soap.MessageImpl.identifyContentType(MessageImpl.java:718) ~[saaj-impl-3.0.2.jar:3.0.2]
+	at com.sun.xml.messaging.saaj.soap.MessageImpl.<init>(MessageImpl.java:306) ~[saaj-impl-3.0.2.jar:3.0.2]
+	at com.sun.xml.messaging.saaj.soap.ver1_1.Message1_1Impl.<init>(Message1_1Impl.java:47) ~[saaj-impl-3.0.2.jar:3.0.2]
+	at com.sun.xml.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl.createMessage(SOAPMessageFactory1_1Impl.java:51) ~[saaj-impl-3.0.2.jar:3.0.2]
+	at org.springframework.ws.soap.saaj.SaajSoapMessageFactory.createWebServiceMessage(SaajSoapMessageFactory.java:180) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.soap.saaj.SaajSoapMessageFactory.createWebServiceMessage(SaajSoapMessageFactory.java:61) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.AbstractWebServiceConnection.receive(AbstractWebServiceConnection.java:89) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:86) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:18:54 [http-nio-8080-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-09 20:18:54 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b8ac4e5
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@52a80958
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-09 20:18:54 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 74 ms
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-10-09 20:18:54 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-10-09 20:18:55 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-09 20:18:55 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 09 20:18:54 CEST 2024, status=500, error=Internal Server Error, path=/ws}]
+2024-10-09 20:18:55 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@3b9643c4] at [http://localhost:8080/ws]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@2fc01793] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@196bd61c]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:19:04 [http-nio-8080-exec-6] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2024-10-09 20:19:32 [http-nio-8080-exec-7] DEBUG org.springframework.ws.transport.http.WsdlDefinitionHandlerAdapter - Transforming [/ws] to [http://localhost:8080/ws]
+2024-10-09 20:19:32 [http-nio-8080-exec-7] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 200 OK
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@6485add] at [http://localhost:8080/ws]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@2fc01793] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@196bd61c]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:20:03 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@5b337fed] at [http://localhost:8080/ws]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@2fc01793] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@196bd61c]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:22:01 [http-nio-8080-exec-3] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@5edc4a50] at [http://localhost:8080/ws]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@2fc01793] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@196bd61c]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.5.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:26:30 [http-nio-8080-exec-5] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2024-10-09 20:35:43 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-10-09 20:35:43 [main] INFO  com.example.taskmanager.TaskManagerApplication - Starting TaskManagerApplication using Java 21.0.4 with PID 32792 (C:\Users\oaalili\IdeaProjects\todo-app\target\classes started by OAALILI in C:\Users\oaalili\IdeaProjects\todo-app)
+2024-10-09 20:35:43 [main] DEBUG com.example.taskmanager.TaskManagerApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+2024-10-09 20:35:43 [main] INFO  com.example.taskmanager.TaskManagerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-09 20:35:44 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-09 20:35:44 [main] INFO  org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-10-09 20:35:45 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-09 20:35:45 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-09 20:35:45 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-09 20:35:45 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-10-09 20:35:45 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-09 20:35:45 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2434 ms
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10fde30a, started on Wed Oct 09 20:35:43 CEST 2024
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Mapped [{http://example.com/tasks}GetTaskRequest] onto endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.soap.server.endpoint.mapping.SoapActionAnnotationMethodEndpointMapping - Looking for endpoints in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10fde30a, started on Wed Oct 09 20:35:43 CEST 2024
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter - No MethodArgumentResolvers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@6824b913, org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@756aadfc, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@705a8dbc, org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@40729f01, org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@d535a3d, org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@2d760326, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@9e54c59, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@5dbb50f3, org.springframework.ws.server.endpoint.adapter.method.StaxPayloadMethodArgumentResolver@4a2e7bcb]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter - No MethodReturnValueHandlers set, using defaults: [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@49e4c2d5, org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@24a2e565, org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@3e36b7a0, org.springframework.ws.server.endpoint.adapter.method.jaxb.JaxbElementPayloadMethodProcessor@60c1663c]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.InliningXsdSchemaTypesProvider - Inlining SimpleXsdSchema{http://example.com/tasks}
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Looking for elements in schema with target namespace [http://example.com/tasks]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Creating message [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.DefaultMessagesProvider - Creating message [{http://example.com/tasks}GetTaskResponse]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.SuffixBasedPortTypesProvider - Creating port type [{http://example.com/tasks}TaskPort]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.SuffixBasedPortTypesProvider - Adding operation [GetTask] to port type [{http://example.com/tasks}TaskPort]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Creating binding [{http://example.com/tasks}TaskPortSoap11]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Creating service [{http://example.com/tasks}TaskPortService]
+2024-10-09 20:35:45 [main] DEBUG org.springframework.ws.wsdl.wsdl11.provider.Soap11Provider - Adding port [TaskPortSoap11] to service [{http://example.com/tasks}TaskPortService]
+2024-10-09 20:35:46 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-09 20:35:46 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2024-10-09 20:35:46 [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-09 20:35:46 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-09 20:35:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-09 20:35:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-09 20:35:46 [main] INFO  com.example.taskmanager.TaskManagerApplication - Started TaskManagerApplication in 4.036 seconds (process running for 6.059)
+2024-10-09 20:36:04 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2024-10-09 20:36:04 [http-nio-8080-exec-2] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Initializing Servlet 'messageDispatcherServlet'
+2024-10-09 20:36:04 [http-nio-8080-exec-2] INFO  org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.saaj.SaajSoapMessageFactory - Using MessageFactory class [com.sun.xml.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - No WebServiceMessageFactory found in servlet 'messageDispatcherServlet': using default
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - No MessageDispatcher found in servlet 'messageDispatcherServlet': using default
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Published [org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition@9abeed2] as tasks.wsdl
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Published [SimpleXsdSchema{http://example.com/tasks}] as taskSchema.xsd
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-09 20:36:04 [http-nio-8080-exec-2] INFO  org.springframework.ws.transport.http.MessageDispatcherServlet - Completed initialization in 66 ms
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter - Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@87096dd] at [http://localhost:8080/ws]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.MessageTracing.received - Received request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping - Looking up endpoint for [{http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@36909ad9] maps request to endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@62a6d5f7]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.endpoint.SoapFaultAnnotationExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.endpoint.SimpleSoapExceptionResolver - Resolving exception from endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.soap.server.SoapMessageDispatcher - Endpoint invocation resulted in exception - responding with Fault
+java.lang.IllegalStateException: No adapter for endpoint [public com.example.tasks.GetTaskResponse com.example.taskmanager.soap.endpoint.TaskEndpoint.getTask(com.example.tasks.GetTaskRequest)]: Is your endpoint annotated with @Endpoint, or does it implement a supported interface like MessageHandler or PayloadEndpoint?
+	at org.springframework.ws.server.MessageDispatcher.getEndpointAdapter(MessageDispatcher.java:291) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.dispatch(MessageDispatcher.java:229) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.ws.server.MessageDispatcher.receive(MessageDispatcher.java:174) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:88) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:60) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:288) ~[spring-ws-core-4.0.4.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.server.MessageTracing.sent - Sent response [SaajSoapMessage {http://schemas.xmlsoap.org/soap/envelope/}Fault] for request [SaajSoapMessage {http://example.com/tasks}GetTaskRequest]
+2024-10-09 20:36:04 [http-nio-8080-exec-2] DEBUG org.springframework.ws.transport.http.MessageDispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
