@@ -2,6 +2,9 @@ package com.example.taskmanager.service;
 
 import com.example.taskmanager.model.Task;
 import com.example.taskmanager.repository.TaskRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,11 +13,14 @@ import java.util.Optional;
 
 @Service
 public class TaskService {
-    private final TaskRepository taskRepository;
+    private TaskRepository taskRepository;
 
-    @Autowired
-    public TaskService(TaskRepository taskRepository) {
+    private ChatClient chatClient;
+
+
+    public TaskService(TaskRepository taskRepository, ChatClient.Builder builder) {
         this.taskRepository = taskRepository;
+        this.chatClient = builder.build();
     }
 
     public List<Task> getAllTasks() {
@@ -26,6 +32,7 @@ public class TaskService {
     }
 
     public Task createTask(Task task) {
+        task.setDescription(improveTaskDescription(task));
         return taskRepository.save(task);
     }
 
@@ -34,6 +41,7 @@ public class TaskService {
         Optional<Task> existingTask = getTaskById(id);
         if (existingTask.isPresent()) {
             updatedTask.setId(id);  // Set the ID of the task being updated
+            updatedTask.setDescription(improveTaskDescription(updatedTask));
             return Optional.of(taskRepository.save(updatedTask));  // Save the updated task
         }
         return Optional.empty();
@@ -57,4 +65,22 @@ public class TaskService {
                         (completed == null || task.isCompleted() == completed))
                 .toList();
     }
+
+    public String improveTaskDescription(Task task) {
+        String response = chatClient.prompt()
+                .user("You are an expert in productivity and task management. Your goal is to rewrite the description of the following task so that it adheres to the SMART criteria:\n" +
+                        "Specific: Clearly define what needs to be done.\n" +
+                        "Measurable: Include a way to measure progress or success.\n" +
+                        "Achievable: Ensure the task is realistic and within reach.\n" +
+                        "Relevant: Align the task with broader goals or purposes.\n" +
+                        "Time-bound: Specify a deadline or timeframe.\n" +
+                        "Here is the current task description: " + task.getDescription() +
+                        " Please provide an improved version of the task description that meets these criteria. Keep the language professional and concise. Please ensure the improved task description is concise and does not exceed 254 characters, including spaces.")
+                .call()
+                .content();
+
+        // Ensure the response does not exceed the limit
+        return response.length() > 255 ? response.substring(0, 255) : response;
+    }
+
 }

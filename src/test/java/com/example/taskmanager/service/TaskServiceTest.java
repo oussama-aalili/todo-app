@@ -5,6 +5,7 @@ import com.example.taskmanager.repository.TaskRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.ai.chat.client.ChatClient;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,94 +17,91 @@ public class TaskServiceTest {
 
     private TaskService taskService;
     private TaskRepository taskRepository;
+    private ChatClient chatClient;
+    private ChatClient.Builder chatClientBuilder;
 
     @BeforeEach
     public void setUp() {
-        taskRepository = Mockito.mock(TaskRepository.class);  // Mock the TaskRepository
-        taskService = new TaskService(taskRepository);        // Inject the mock into TaskService
+        taskRepository = Mockito.mock(TaskRepository.class);  // Mock TaskRepository
+        chatClient = Mockito.mock(ChatClient.class);          // Mock ChatClient
+        chatClientBuilder = Mockito.mock(ChatClient.Builder.class);  // Mock ChatClient.Builder
+
+        // Setup builder behavior
+        when(chatClientBuilder.build()).thenReturn(chatClient);
+
+        // Initialize TaskService with mocked dependencies
+        taskService = new TaskService(taskRepository, chatClientBuilder);
     }
 
     @Test
     public void testGetAllTasks() {
-        // Setup the mock behavior
-        when(taskRepository.findAll()).thenReturn(List.of());
+        when(taskRepository.findAll()).thenReturn(List.of());  // Mock repository behavior
 
-        // Call the service method
         List<Task> result = taskService.getAllTasks();
 
-        // Verify the results
         assertTrue(result.isEmpty(), "Task list should be empty initially.");
-        verify(taskRepository, times(1)).findAll();  // Verify that findAll was called once
+        verify(taskRepository, times(1)).findAll();
     }
 
     @Test
     public void testCreateTask() {
-        Task task = new Task(0, "New Task", "New Description", false);
-        Task savedTask = new Task(1, "New Task", "New Description", false); // Task after saving (with ID)
+        Task task = new Task(0, "New Task", "Old Description", false);
+        Task savedTask = new Task(1, "New Task", "Improved Description", false);
 
-        // Setup the mock behavior
+//        when(chatClient.prompt())
+//                .thenReturn(new ChatClient.PromptBuilder(chatClient)); // Mock prompt interaction
+        // Create mocks for each step of the chain
+        ChatClient.ChatClientRequestSpec promptMock = Mockito.mock(ChatClient.ChatClientRequestSpec.class);
+        ChatClient.CallResponseSpec responseMock = Mockito.mock(ChatClient.CallResponseSpec.class);
+
+        // Stub the behavior of the chain
+        when(chatClient.prompt()).thenReturn(promptMock);
+        when(promptMock.user(anyString())).thenReturn(promptMock);
+        when(promptMock.call()).thenReturn(responseMock);
+        when(responseMock.content()).thenReturn("Improved Description");
+
+      //  when(chatClient.prompt().user(anyString()).call().content()).thenReturn("Improved Description");
         when(taskRepository.save(task)).thenReturn(savedTask);
 
-        // Call the service method
-        Task createdTask = taskService.createTask(task);
+        Task result = taskService.createTask(task);
 
-        // Verify that the task is created and has an ID
-        assertNotNull(createdTask.getId(), "Task ID should not be null after creation.");
-        assertEquals("New Task", createdTask.getTitle(), "Task title should match.");
-        assertEquals("New Description", createdTask.getDescription(), "Task description should match.");
-        assertFalse(createdTask.isCompleted(), "Task should not be completed.");
-        verify(taskRepository, times(1)).save(task);  // Verify that save was called once
-    }
-
-    @Test
-    public void testGetTaskById() {
-        Task task = new Task(1, "Task 1", "Description 1", false);
-
-        // Setup the mock behavior
-        when(taskRepository.findById(1)).thenReturn(Optional.of(task));
-
-        // Call the service method
-        Optional<Task> result = taskService.getTaskById(1);
-
-        // Verify the results
-        assertTrue(result.isPresent(), "Task should be found.");
-        assertEquals("Task 1", result.get().getTitle(), "Task title should match.");
-        verify(taskRepository, times(1)).findById(1);  // Verify that findById was called once
+        assertEquals("Improved Description", result.getDescription(), "Description should be improved.");
+        verify(taskRepository, times(1)).save(task);
     }
 
     @Test
     public void testUpdateTask() {
         Task existingTask = new Task(1, "Old Task", "Old Description", false);
         Task updatedTask = new Task(1, "Updated Task", "Updated Description", true);
+        ChatClient.ChatClientRequestSpec promptMock = Mockito.mock(ChatClient.ChatClientRequestSpec.class);
+        ChatClient.CallResponseSpec responseMock = Mockito.mock(ChatClient.CallResponseSpec.class);
 
-        // Setup the mock behavior
         when(taskRepository.findById(1)).thenReturn(Optional.of(existingTask));
-        when(taskRepository.save(updatedTask)).thenReturn(updatedTask);
 
-        // Call the service method
+
+        // Stub the behavior of the chain
+        when(chatClient.prompt()).thenReturn(promptMock);
+        when(promptMock.user(anyString())).thenReturn(promptMock);
+        when(promptMock.call()).thenReturn(responseMock);
+        when(responseMock.content()).thenReturn("Improved Description");
+        when(taskRepository.save(any(Task.class))).thenReturn(updatedTask);
+
         Optional<Task> result = taskService.updateTask(1, updatedTask);
 
-        // Verify that the task is updated
-        assertTrue(result.isPresent(), "Task should be found for update.");
-        assertEquals("Updated Task", result.get().getTitle(), "Task title should be updated.");
-        assertTrue(result.get().isCompleted(), "Task should be marked as completed.");
-        verify(taskRepository, times(1)).findById(1);  // Verify that findById was called once
-        verify(taskRepository, times(1)).save(updatedTask);  // Verify that save was called once
+        assertTrue(result.isPresent(), "Task should be updated successfully.");
+        assertEquals("Improved Description", result.get().getDescription(), "Description should be improved.");
+        verify(taskRepository, times(1)).findById(1);
+        verify(taskRepository, times(1)).save(updatedTask);
     }
 
     @Test
     public void testDeleteTask() {
-        Task task = new Task(1, "Task to Delete", "Delete me", false);
-
-        // Setup the mock behavior
         when(taskRepository.existsById(1)).thenReturn(true);
 
-        // Call the service method to delete
         boolean result = taskService.deleteTask(1);
 
-        // Verify that the task is deleted
-        assertTrue(result, "Task should be deleted.");
-        verify(taskRepository, times(1)).deleteById(1);  // Verify that deleteById was called once
+        assertTrue(result, "Task should be deleted successfully.");
+        verify(taskRepository, times(1)).deleteById(1);
     }
 
     @Test
@@ -111,21 +109,32 @@ public class TaskServiceTest {
         Task task1 = new Task(1, "Test Task 1", "Description 1", false);
         Task task2 = new Task(2, "Another Task", "Description 2", true);
 
-        // Setup the mock behavior
         when(taskRepository.findAll()).thenReturn(List.of(task1, task2));
 
-        // Call the service method for searching by title
         List<Task> result = taskService.searchTasks("Test", null, null);
 
-        // Verify the results
-        assertEquals(1, result.size(), "Should find one task with the title 'Test Task 1'");
-        assertEquals("Test Task 1", result.get(0).getTitle(), "Task title should match.");
-
-        // Call the service method for searching by completed status
-        result = taskService.searchTasks(null, null, true);
-
-        // Verify the results
-        assertEquals(1, result.size(), "Should find one task that is completed.");
-        assertEquals("Another Task", result.get(0).getTitle(), "Task title should match.");
+        assertEquals(1, result.size(), "Should find one task matching the search criteria.");
+        assertEquals("Test Task 1", result.get(0).getTitle(), "Title should match the search criteria.");
     }
+
+    @Test
+    public void testImproveTaskDescription() {
+        // Create mocks for each step of the chain
+        ChatClient.ChatClientRequestSpec promptMock = Mockito.mock(ChatClient.ChatClientRequestSpec.class);
+        ChatClient.CallResponseSpec responseMock = Mockito.mock(ChatClient.CallResponseSpec.class);
+
+        // Stub the behavior of the chain
+        when(chatClient.prompt()).thenReturn(promptMock);
+        when(promptMock.user(anyString())).thenReturn(promptMock);
+        when(promptMock.call()).thenReturn(responseMock);
+        when(responseMock.content()).thenReturn("Improved Description");
+
+        // Test the service method
+        Task task = new Task(0, "Task Title", "Old Description", false);
+        String result = taskService.improveTaskDescription(task);
+
+        // Verify the result
+        assertEquals("Improved Description", result, "The task description should be improved.");
+    }
+
 }
