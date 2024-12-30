@@ -13,71 +13,74 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Service  // Marks this class as a service component for Spring Dependency Injection
 public class TaskService {
-    private TaskRepository taskRepository;
 
-    private ChatClient chatClient;
+    private TaskRepository taskRepository;  // The repository used to interact with the database
+    private ChatClient chatClient;  // ChatClient used to improve task descriptions using an AI model
 
-    // Create a logger instance for this class
+    // Logger for logging information and debugging
     private static final Logger logger = LogManager.getLogger(TaskService.class);
 
-
+    // Constructor injecting dependencies (TaskRepository and ChatClient)
     public TaskService(TaskRepository taskRepository, ChatClient.Builder builder) {
         this.taskRepository = taskRepository;
-        this.chatClient = builder.build();
+        this.chatClient = builder.build();  // Initialize the chatClient using the builder pattern
     }
 
+    // Fetch all tasks from the database
     public List<Task> getAllTasks() {
-        return taskRepository.findAll();
+        return taskRepository.findAll();  // Returns all tasks in the database
     }
 
+    // Fetch a task by its ID from the database
     public Optional<Task> getTaskById(int id) {
-        logger.info("Fetching task with ID: {}", id);
-        return taskRepository.findById(id);
+        logger.info("Fetching task with ID: {}", id);  // Log the action for traceability
+        return taskRepository.findById(id);  // Use repository method to find the task by ID
     }
 
+    // Create a new task and save it in the database
     public Task createTask(Task task) {
-        logger.info("Adding a new task with title: {}", task.getTitle());
-        task.setDescription(improveTaskDescription(task));
-        return taskRepository.save(task);
+        logger.info("Adding a new task with title: {}", task.getTitle());  // Log task creation
+        task.setDescription(improveTaskDescription(task));  // Improve the task description using AI
+        return taskRepository.save(task);  // Save the task in the database and return the saved task
     }
 
+    // Update an existing task by ID
     public Optional<Task> updateTask(int id, Task updatedTask) {
-        // Check if the task exists
-        logger.info("Updating task with ID: {}", id);
-        Optional<Task> existingTask = getTaskById(id);
-        if (existingTask.isPresent()) {
-            updatedTask.setId(id);  // Set the ID of the task being updated
-            updatedTask.setDescription(improveTaskDescription(updatedTask));
-            logger.debug("Task with ID: {} updated successfully", id);
-            return Optional.of(taskRepository.save(updatedTask));  // Save the updated task
+        logger.info("Updating task with ID: {}", id);  // Log the update action
+        Optional<Task> existingTask = getTaskById(id);  // Check if the task exists
 
+        if (existingTask.isPresent()) {
+            updatedTask.setId(id);  // Ensure the updated task has the correct ID
+            updatedTask.setDescription(improveTaskDescription(updatedTask));  // Improve task description
+            logger.debug("Task with ID: {} updated successfully", id);  // Log successful update
+            return Optional.of(taskRepository.save(updatedTask));  // Save and return the updated task
         }
-        return Optional.empty();
+        return Optional.empty();  // Return empty if the task was not found
     }
 
+    // Delete a task by ID
     public boolean deleteTask(int id) {
         if (taskRepository.existsById(id)) {
-            logger.info("Deleting task with ID: {}", id);
-            taskRepository.deleteById(id);
-            return true;  // Return true if the task was deleted
+            logger.info("Deleting task with ID: {}", id);  // Log deletion action
+            taskRepository.deleteById(id);  // Delete the task from the database
+            return true;  // Return true if the task was deleted successfully
         }
         return false;  // Return false if the task was not found
     }
 
-    // Search tasks by title, description, or completed status
+    // Search for tasks based on title, description, and completion status
     public List<Task> searchTasks(String title, String description, Boolean completed) {
-        // Since we're using a database, we can build custom queries in the repository for better searching
-        // For now, we can return all tasks and filter in memory as a simple implementation
-        logger.info("Searching task with title: {}", title);
-        return taskRepository.findAll().stream()
+        logger.info("Searching task with title: {}", title);  // Log the search action
+        return taskRepository.findAll().stream()  // Stream all tasks for filtering
                 .filter(task -> (title == null || task.getTitle().toLowerCase().contains(title.toLowerCase())) &&
                         (description == null || task.getDescription().toLowerCase().contains(description.toLowerCase())) &&
-                        (completed == null || task.isCompleted() == completed))
-                .toList();
+                        (completed == null || task.isCompleted() == completed))  // Filter by provided criteria
+                .toList();  // Return the filtered list of tasks
     }
 
+    // Use ChatClient to improve the task description according to SMART criteria
     public String improveTaskDescription(Task task) {
         String response = chatClient.prompt()
                 .user("You are an expert in productivity and task management. Your goal is to rewrite the description of the following task so that it adheres to the SMART criteria:\n" +
@@ -89,10 +92,9 @@ public class TaskService {
                         "Here is the current task description: " + task.getDescription() +
                         " Please provide an improved version of the task description that meets these criteria. Keep the language professional and concise. Please ensure the improved task description is concise and does not exceed 254 characters, including spaces.")
                 .call()
-                .content();
+                .content();  // Call the AI service and get the improved description
 
-        // Ensure the response does not exceed the limit
-        return response.length() > 255 ? response.substring(0, 255) : response;
+        // Ensure the response is not longer than 255 characters
+        return response.length() > 255 ? response.substring(0, 255) : response;  // Return the improved description
     }
-
 }
