@@ -8,8 +8,7 @@ This Todo App serves as a practical project to explore and implement a wide rang
 **Features**  
 **Task Management:** create, read, update and delete tasks  
 **Logging:** logging part of the application   
-**Search feature:** Providing search capabilities for tasks based on keywords  
-**User Authentication:** login and registration system.  
+**Search feature:** Providing search capabilities for tasks based on keywords   
 **AI feature:** To improve a task to be valid to the SMART criteria (https://en.wikipedia.org/wiki/SMART_criteria)  
 **Batch job:** An Job to check in the evening that users that have not used the todo for two weeks will be delete.   
 
@@ -18,26 +17,13 @@ This Todo App serves as a practical project to explore and implement a wide rang
 Angular: TypeScript-based framework for building web applications.   
 
 **Backend**  
-Java 17: Modern Java features and improvements.  
+Java 21: Modern Java features and improvements.  
 Spring Boot 3: Framework for building Java applications.  
 Lombok: Simplify Java code with annotations.  
 Log4j: Logging library for Java.  
-Langchain4j: Integrate AI and LLM-powered applications with Spring Boot.  
-Kafka: Distributed event streaming platform.  
+Spring AI: Integrate AI and LLM-powered applications with Spring Boot.  
 REST: Traditional API design.  
 Postman: Tool for creating, testing, and documenting APIs.  
-SOAP: Protocol for exchanging structured information.  
-Microservices: Architectural style for developing applications.  
-Event-driven architecture: Design pattern for building scalable systems. 
-
-**Database**  
-PostgreSQL: A robust relational database.  
-MongoDB (NoSQL Database) : A flexible, non-relational database.   
-
-**DevOps**  
-Docker: Containerize the application for consistent environments.  
-Kubernetes: Orchestrate container deployment.  
-CI/CD: Continuous Integration and Continuous Deployment pipelines.  
 
 **Contributing**  
 Feel free to response and review this repository. Any contributions or feedback is more than welcome
