@@ -4,6 +4,8 @@ import com.example.taskmanager.model.Task;
 import com.example.taskmanager.repository.TaskRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,9 @@ public class TaskService {
 
     private ChatClient chatClient;
 
+    // Create a logger instance for this class
+    private static final Logger logger = LogManager.getLogger(TaskService.class);
+
 
     public TaskService(TaskRepository taskRepository, ChatClient.Builder builder) {
         this.taskRepository = taskRepository;
@@ -28,27 +33,33 @@ public class TaskService {
     }
 
     public Optional<Task> getTaskById(int id) {
+        logger.info("Fetching task with ID: {}", id);
         return taskRepository.findById(id);
     }
 
     public Task createTask(Task task) {
+        logger.info("Adding a new task with title: {}", task.getTitle());
         task.setDescription(improveTaskDescription(task));
         return taskRepository.save(task);
     }
 
     public Optional<Task> updateTask(int id, Task updatedTask) {
         // Check if the task exists
+        logger.info("Updating task with ID: {}", id);
         Optional<Task> existingTask = getTaskById(id);
         if (existingTask.isPresent()) {
             updatedTask.setId(id);  // Set the ID of the task being updated
             updatedTask.setDescription(improveTaskDescription(updatedTask));
+            logger.debug("Task with ID: {} updated successfully", id);
             return Optional.of(taskRepository.save(updatedTask));  // Save the updated task
+
         }
         return Optional.empty();
     }
 
     public boolean deleteTask(int id) {
         if (taskRepository.existsById(id)) {
+            logger.info("Deleting task with ID: {}", id);
             taskRepository.deleteById(id);
             return true;  // Return true if the task was deleted
         }
@@ -59,6 +70,7 @@ public class TaskService {
     public List<Task> searchTasks(String title, String description, Boolean completed) {
         // Since we're using a database, we can build custom queries in the repository for better searching
         // For now, we can return all tasks and filter in memory as a simple implementation
+        logger.info("Searching task with title: {}", title);
         return taskRepository.findAll().stream()
                 .filter(task -> (title == null || task.getTitle().toLowerCase().contains(title.toLowerCase())) &&
                         (description == null || task.getDescription().toLowerCase().contains(description.toLowerCase())) &&
